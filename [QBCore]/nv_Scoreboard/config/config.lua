@@ -2,7 +2,7 @@ Config = {}
 
 Config.Locale = 'en'
 
-Config.RPNames = false -- Set to "true" if you want RP Names
+Config.RPNames = true -- Set to "true" if you want RP Names
 
 Config.Translations = {
     ['en'] = {
@@ -26,86 +26,86 @@ Config.Notification = function(action)
 end
 
 Config.Business = {
-    ['LSPD'] = {
+    ['Met Police'] = {
         Job = 'police',
-        Description = 'To protect and to serve.',
+        Description = 'Making London safer.',
         Status = {
             Service = {'Available', 'Busy', 'Out of service'},
             Defcons = {'Defcon 1', 'Defcon 2', 'Defcon 3', 'Defcon 4', 'Defcon 5'},
         }
     },
-    ['LSMD'] = {
+    ['LAS'] = {
         Job = 'ambulance',
-        Description = 'Dedicated to safing lifes.',
+        Description = 'Dedicated to saving lifes.',
         Status = {
             Service = {'Available', 'Busy', 'Out of service'},
             Defcons = {'Ambulances', 'In Hospital', 'None'},
         }
     },
-    ['LSC'] = {
-        Job = 'mechanic',
-        Description = 'Modify your vehicles as your liking.',
+    ['Import Tuner Store'] = {
+        Job = 'tuner',
+        Description = 'Vehicle performance mods',
         Status = {
             Service = {'Available', 'Busy', 'Out of service'},
             Tunning = {'In LS', 'In PT', 'In SS'},
         }
     },
-    ['VANILLA'] = {
+    ['Vanilla Unicorn'] = {
         Job = 'vanilla',
-        Description = 'Get rid of your stress 😁.',
+        Description = 'Destress 😁.',
         Status = {
-            Service = {'Oppened', 'Closed'},
+            Service = {'Open', 'Closed'},
             Prices = {'Discount', '20$'},
         }
     },
-    ['BAHAMAS'] = {
-        Job = 'bahamas',
-        Description = 'Have some fun with our parties.',
+    ['Bennys Visual Mods'] = {
+        Job = 'strawberrybennys',
+        Description = 'Vehicle visual mods and resprays',
         Status = {
-            Service = {'Oppened', 'Closed'},
+            Service = {'Open', 'Closed'},
             Days = {'24/7', '24/5'},
         }
     },
-    ['TEQUILA-LA'] = {
-        Job = 'tequilala',
-        Description = 'Leave your problems at one side.',
+    ['Ottos Visual Mods'] = {
+        Job = 'usedcars',
+        Description = 'Vehicle visual mods and resprays',
         Status = {
-            Service = {'Oppened', 'Closed'},
+            Service = {'Open', 'Closed'},
             Days = {'24/7', '24/5'},
         }
     },
-    ['AIRPORT'] = {
-        Job = 'pilot',
-        Description = 'Travel with us around the world.',
+    ['Best Buds'] = {
+        Job = 'bestbuds',
+        Description = 'For all your CBD needs',
         Status = {
-            Service = {'Oppened', 'Closed'},
-            Status = {'Operative', 'Accident'},
+            Service = {'Open', 'Closed'},
+            Days = {'24/7', '24/5'},
         }
     },
-    ['CONCESSIONAIRE'] = {
-        Job = 'vehicle_seller',
-        Description = 'Car lover? Come with us.',
+    ['White Widow'] = {
+        Job = 'whitewidow',
+        Description = 'For all your CBD needs',
         Status = {
-            Service = {'Oppened', 'Closed'},
-            Status = {'DISCOUNTS', 'NORMAL'},
+            Service = {'Oppen', 'Closed'},
+            Days = {'24/7', '24/5'},
         }
     },
 }
 
 Config.Robberies = {
-    ['BANK'] = {
+    ['Fleeca Banks'] = {
         Job = 'police',
-        Description = "Break into the bank's facilities stealthily, or enter like in the movies.",
+        Description = "Break into the Fleeca banks facilities stealthily, or like in the movies.",
+        Min = 2,
+    },
+    ['Paleto Bank'] = {
+        Job = 'police',
+        Description = "Break into the Paleto bank's facilities stealthily, or like in the movies.",
+        Min = 3,
+    },
+    ['Pacific Bank'] = {
+        Job = 'police',
+        Description = "Break into the Pacific banks facilities stealthily, or enter like in the movies.",
         Min = 4,
-    },
-    ['CASINO'] = {
-        Job = 'police',
-        Description = "Enter the casino to rob the safe, but be careful, the cameras are always watching you.",
-        Min = 6,
-    },
-    ['YACHT'] = {
-        Job = 'police',
-        Description = "Swim to the yacht to steal its valuables, or simply land on it and steal everything.",
-        Min = 12,
     },
 }
